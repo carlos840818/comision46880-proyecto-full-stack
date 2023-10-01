@@ -1,0 +1,1614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Poppins:wght@200&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;500&display=swap');
+
+/* Tipografias para el proyecto.
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* header */
+
+header{
+    width: 100%;
+    position: fixed;
+}
+
+.nav-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.767);
+    padding: 1rem 1.5rem;
+}
+
+nav .logo {
+    font-weight: 700;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: azure;
+}
+
+nav #toggle, nav label {
+    display: none;
+}
+
+.navbar li :hover{
+    color: blueviolet;
+}
+
+
+/* main index*/
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 2100px;
+    background-color: black;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    "section1 section1 section1 section1"
+    "section2 section2 section2 section2"
+    "section3 section3 section4 section4"
+    "section5 section5 section6 section6"
+    "section8 section8 section7 section7"
+    "section9 section9 section10 section10"
+    ". section11 section11 ."
+    ;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.grid-main p {
+    text-align: justify;
+}
+
+.section1 {
+    background-image: url(../assets/codigo3.jpg);
+    background-color: black;
+    grid-area: section1;
+    color: azure;
+    background-repeat: no-repeat;
+}
+
+.section1 div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.presentacion {
+    padding: 120px;
+}
+
+.presentacion :hover{
+    color: blueviolet;
+}
+
+.presentacion h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.875rem;
+}
+
+.presentacion h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+}
+
+.section2{
+    background-color: black;
+    grid-area: section2;
+    color: azure;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.section2 h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5625rem;
+}
+
+.section2 p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.125rem;
+}
+
+.section3 {
+    background-color: black;
+    grid-area: section3;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+}
+
+.section3 div img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; 
+    background-position: center;
+    border-radius: 30px; 
+    padding: 4px 4px 0px 4px;
+}
+
+.section4{
+    background-color: black;
+    grid-area: section4;
+    color: azure;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.section4 p{
+    margin: 20px;
+}
+.section4 h3{
+    margin: 10px;
+}
+
+.section4 div a h3{
+    color: azure;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section5{
+    background-color: black;
+    grid-area: section5;
+    color: azure;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.section5 p{
+    margin: 20px;
+}
+
+.section5 h3{
+    margin: 10px;
+}
+
+.section5 div a h3{
+    color: azure;
+}
+
+.section6 {
+    background-color: black;
+    grid-area: section6;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+}
+
+.section6 div img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section7{
+    background-color: black;
+    grid-area: section7;
+    color: azure;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.section7 p {
+    margin: 20px;
+}
+
+.section7 h3{
+    margin: 10px;
+}
+
+.section7 div a h3{
+    color: azure;
+}
+
+.section8 {
+    background-color: black;
+    grid-area: section8;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+}
+
+.section8 div img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section9{
+    background-color: black;
+    grid-area: section9;
+    color: azure;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.section9 p{
+    margin: 20px;
+}
+
+.section9 h3{
+    margin: 10px;
+}
+
+.section9 div a h3{
+    color: azure;
+}
+
+.section10 {
+    background-color: black;
+    grid-area: section10;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+}
+
+.section10 div img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+
+.section11 {
+    background-color: black;
+    grid-area: section11;
+    width: 100%;
+    height: 300px;
+    color: azure;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.registro{
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.registro:hover{
+    background-color: rgba(37, 36, 36, 0.685);
+}
+
+.control{
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    border-color: azure;
+}
+
+
+/* main - pages */
+
+.grid-pages {
+    display: grid;
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+    grid-template-columns: 20px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "section12 section12 section12 section12"
+    "section13 section13 section13 section13"
+    "grilla-1 grilla2 grilla3 grilla4";
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.grid-pages{
+    text-align: justify;
+    justify-content: center;
+}
+
+.section12 {
+    background-image: url(../assets/codigo3.jpg);
+    background-color: black;
+    grid-area: section12;
+    color: azure;
+    background-repeat: no-repeat;
+}
+
+.section12 div img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.presentacion {
+    padding: 120px;
+    justify-content: center;
+    text-align: center;
+}
+
+.presentacion :hover{
+    color: blueviolet;
+}
+
+.section13{
+    background-color: black;
+    grid-area: section13;
+    color: azure;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.section13 h3{
+    text-align: center;
+}
+
+.section14 {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+    "grilla-1 grilla-2 grilla-3 grilla-4";
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.grilla-1{
+background-color: black;
+grid-area: grilla-1;
+color: azure;
+padding: 20px;
+font-size: 18px;
+}
+
+.grilla-2{
+    background-color: black;
+    grid-area: grilla-2;
+    color: azure;
+    padding: 20px;
+    font-size: 18px;
+    }
+
+.grilla-3{
+    background-color: black;
+    grid-area: grilla-3;
+    color: azure;
+    padding: 20px;
+    font-size: 18px;
+    }
+
+.grilla-4{
+    background-color: black;
+    grid-area: grilla-4;
+    color: azure;
+    padding: 20px;
+    font-size: 18px;
+    }
+
+    
+/* footer */
+
+footer{
+
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+
+.bg-negro{
+    background-color: black;
+}
+
+
+/* mediaqueries 1024px */
+
+/* header mediaquerie 1024px */
+
+@media (max-width: 1024px){
+
+    nav{
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .navbar li :hover{
+        color: rgb(226, 7, 160);
+    }
+/* main mediaquerie 1024px */
+
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 2400px;
+}
+    .presentacion {
+        font-size: 14px;
+    }
+    
+    .presentacion :hover{
+        color: rgb(226, 7, 160);
+    }
+
+    .section2{
+        grid-area: section2;
+        font-size: 16px;
+    }
+
+    .section3 div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px;
+        padding: 4px 4px 0px 4px;
+    }
+
+    .section4{
+        grid-area: section4;
+        font-size: 16px;
+    }
+
+    .section5{
+        grid-area: section5;
+        font-size: 16px;
+    }
+
+    .section6 div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px;
+        padding: 4px 4px 0px 4px;
+    }
+
+    .section7{
+        grid-area: section7;
+        font-size: 16px;
+    }
+
+    .section8 div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px;
+        padding: 4px 4px 0px 4px;
+    }
+
+    .section9{
+        grid-area: section9;
+        font-size: 16px;
+    }
+
+    .section10 div img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 30px;
+        padding: 4px 4px 0px 4px;
+    }
+
+    .section11{
+        grid-area: section11;
+        font-size: 16px;
+    }
+
+    /* mediaquerie 1024 main-pages */
+
+    .grid-pages {
+        display: grid;
+        width: 100%;
+        height: 1200px;
+    }
+
+    .section14 {
+        display: grid;
+        width: 100%;
+        height: 400px;
+    }
+
+    .presentacion {
+    font-size: 14px;
+    }
+
+    .presentacion :hover{
+        color: rgb(226, 7, 160);
+    }
+
+    .section13{
+        font-size: 16px;
+    }
+
+    .grilla-1{
+        grid-area: grilla-1;
+        font-size: 16px;
+    }
+    
+    .grilla-2{
+        grid-area: grilla-2;
+        font-size: 16px;
+        }
+    
+    .grilla-3{
+        grid-area: grilla-3;   
+        font-size: 16px;
+        }
+    
+    .grilla-4{
+        grid-area: grilla-4;
+        font-size: 16px;
+        }
+
+}
+
+/* mediaqueries 768px */
+/* header 768 */
+
+@media (max-width: 768px){
+
+
+    nav .navbar{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+
+    .navbar li :hover{
+        color: rgb(118, 238, 63);
+    }
+
+    nav label{
+        display: flex;
+        color: azure;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked ~ .navbar{
+        height: 100%;
+
+    }
+
+/* main mediaquerie 768px */
+
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 2500px;
+    grid-template-columns: repeat(4, 22%);
+}
+    .presentacion {
+        margin-top: 50px;
+    }
+
+    .presentacion h1{
+        font-size: 18px;
+    }
+    
+    .presentacion :hover{
+        color: rgb(118, 238, 63);
+    }
+
+    .section2{
+        grid-area: section2;
+        font-size: 14px;
+    }
+
+    .section2 h2{
+    font-size: 18px;
+    }
+
+    .section2 p{
+        font-size: 16px;
+    }
+
+    .section4{
+    grid-area: section4;
+    font-size: 14px;
+    }
+
+    .section4 h3{
+        font-size: 16px;
+    }
+
+    .section5{
+    grid-area: section5;
+    font-size: 14px;
+}
+
+.section5 h3{
+    font-size: 16px;
+}
+
+.section7{
+    grid-area: section7;
+    font-size: 14px;
+}
+
+.section7 h3{
+    font-size: 16px;
+}
+
+.section9{
+    grid-area: section9;
+    font-size: 14px;
+}
+
+.section9 h3{
+    font-size: 16px;
+}
+
+.section11{
+    grid-area: section11;
+    font-size: 14px;
+}
+
+footer{
+    width: 100%;
+    height: 600px;
+}
+
+/* mediaqueries main pages 768 */
+
+.grid-pages {
+    display: grid;
+    width: 100%;
+    height: 1400px;
+    background-color: black;
+    grid-template-columns: 20px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "section12 section12 section12 section12"
+    "section13 section13 section13 section13"
+    "grilla-1 grilla-2" 
+    "grilla-3 grilla-4"; 
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.section12 {
+    background-image: url(../assets/codigo3.jpg);
+    background-color: black;
+    grid-area: section12;
+    color: azure;
+    background-repeat: no-repeat;
+}
+
+.section12 div img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.presentacion {
+    padding: 120px;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.presentacion h1{
+    font-size: 16px;
+}
+
+.presentacion h2{
+    font-size: 12px;
+}
+
+.presentacion :hover{
+    color: rgb(118, 238, 63);
+}
+
+.section13{
+    background-color: black;
+    grid-area: section13;
+    color: azure;
+    padding: 30px;
+    font-size: 14px;
+}
+
+.section13 h3{
+    text-align: center;
+    font-size: 16px;
+}
+
+.section13 p{
+    text-align: justify;
+}
+
+.section14 {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "grilla-1 grilla-2" 
+    "grilla-3 grilla-4";
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    text-align: justify;
+}
+
+.grilla-1{
+background-color: black;
+grid-area: grilla-1;
+color: azure;
+padding: 20px;
+font-size: 14px;
+text-align: center;
+}
+
+.grilla-1 h4{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.grilla-2{
+    background-color: black;
+    grid-area: grilla-2;
+    color: azure;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    }
+
+    .grilla-2 h4{
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+.grilla-3{
+    background-color: black;
+    grid-area: grilla-3;
+    color: azure;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    }
+
+    .grilla-3 h4{
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+.grilla-4{
+    background-color: black;
+    grid-area: grilla-4;
+    color: azure;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.grilla-4 h4{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+}
+
+/* mediaqueries 425px */
+
+/* header 425 */
+
+@media (min-width: 425px) and (max-width: 600px){
+
+    header{
+        position: fixed;
+    }
+
+    nav .navbar{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+
+    nav label{
+        display: flex;
+        color: azure;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked ~ .navbar{
+        height: 100%;
+    }
+
+    .navbar li :hover{
+        color: red;
+    }
+
+    /* main index 425px*/
+
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 2900px;
+    background-color: black;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section4"
+    "section3"
+    "section5"
+    "section6"
+    "section7"
+    "section8"
+    "section9"
+    "section10"
+    "section11"
+    ;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+}
+
+.grid-main p {
+    text-align: justify;
+}
+
+.section1 {
+    background-image: url(../assets/codigo3.jpg);
+    background-color: black;
+    grid-area: section1;
+    color: azure;
+    background-repeat: no-repeat;
+}
+
+.section1 div img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.presentacion {
+    padding-top: 200px;
+    font-size: 10px;
+}
+
+.presentacion h1{
+    font-size: 14px;
+}
+
+.presentacion h2{
+    display: none;
+}
+
+
+.presentacion :hover{
+    color: red;
+} 
+
+.section2{
+    background-color: black;
+    grid-area: section2;
+    color: azure;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.section2 h2{
+    font-size: 16px;
+}
+
+.section2 p{
+font-size: 14px;
+}
+
+.section3 {
+    background-color: black;
+    grid-area: section3;
+    margin: 5px 20px 5px 20px; 
+    border-style: double;
+    border-color: black; 
+    border-radius: 30px;
+}
+
+.section3 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover; 
+    background-position: center;
+    border-radius: 30px; 
+    padding: 12px 4px 0px 4px;
+}
+
+.section4{
+    background-color: black;
+    grid-area: section4;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.section4 p{
+    margin: 20px;
+
+}
+.section4 h3{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.section4 div a h3{
+    color: azure;
+}
+
+.section5{
+    background-color: black;
+    grid-area: section5;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.section5 p{
+    margin: 20px;
+}
+
+.section5 h3{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.section5 div a h3{
+    color: azure;
+}
+
+.section6 {
+    background-color: black;
+    grid-area: section6;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.section6 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section7{
+    background-color: black;
+    grid-area: section7;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.section7 p {
+    margin: 20px;
+}
+
+.section7 h3{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.section7 div a h3{
+    color: azure;
+}
+
+.section8 {
+    background-color: black;
+    grid-area: section8;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.section8 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section9{
+    background-color: black;
+    grid-area: section9;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.section9 p{
+    margin: 20px;
+}
+
+.section9 h3{
+    font-size: 16px;
+    margin: 10px;
+}
+
+.section9 div a h3{
+    color: azure;
+}
+
+.section10 {
+    background-color: black;
+    grid-area: section10;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.section10 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section11 {
+    background-color: black;
+    grid-area: section11;
+    width: 100%;
+    height: 200px;
+    color: azure;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* main pages 425 */
+
+.grid-pages {
+    display: grid;
+    width: 100%;
+    height: 2000px;
+    background-color: black;
+} 
+   
+}
+
+/*  media querie de 424 a 320 */
+
+@media (min-width: 100px) and (max-width: 424px){
+
+    header{
+        position: fixed;
+    }
+
+    nav .navbar{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0px;
+    }
+
+    nav label{
+        display: flex;
+        color: azure;
+        cursor: pointer;
+    }
+
+    nav #toggle:checked ~ .navbar{
+        height: 100%;
+    }
+
+    .navbar li :hover{
+        color: aqua;
+    }
+
+    /* main index 424 a 320px*/
+
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 2900px;
+    background-color: black;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section4"
+    "section3"
+    "section5"
+    "section6"
+    "section7"
+    "section8"
+    "section9"
+    "section10"
+    "section11"
+    ;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.grid-main p {
+    text-align: justify;
+}
+
+.section1 {
+    background-image: url(../assets/codigo3.jpg);
+    background-color: black;
+    grid-area: section1;
+    color: azure;
+    background-repeat: no-repeat;
+}
+
+.section1 div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.presentacion {
+    padding-top: 100px;
+    font-size: 10px;
+}
+
+.presentacion h1{
+    font-size: 10px;
+}
+
+.presentacion h2{
+    display: none;
+}
+
+
+.presentacion :hover{
+    color: aqua;
+}
+
+.section2{
+    background-color: black;
+    grid-area: section2;
+    color: azure;
+    padding: 30px;
+    font-size: 10px;
+}
+
+.section2 h2{
+    font-size: 15px;
+}
+
+.section2 p{
+    font-size: 12px;
+}
+
+.section3 {
+    background-color: black;
+    grid-area: section3;
+    margin: 5px 20px 5px 20px; 
+    border-style: double;
+    border-color: black; 
+    border-radius: 30px;
+}
+
+.section3 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover; 
+    background-position: center;
+    border-radius: 30px; 
+    padding: 12px 4px 0px 4px;
+}
+
+.section4{
+    background-color: black;
+    grid-area: section4;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.section4 p{
+    margin: 20px;
+
+}
+.section4 h3{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.section4 div a h3{
+    color: azure;
+}
+
+.section5{
+    background-color: black;
+    grid-area: section5;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.section5 p{
+    margin: 20px;
+}
+
+.section5 h3{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.section5 div a h3{
+    color: azure;
+}
+
+.section6 {
+    background-color: black;
+    grid-area: section6;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.section6 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section7{
+    background-color: black;
+    grid-area: section7;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.section7 p {
+    margin: 20px;
+}
+
+.section7 h3{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.section7 div a h3{
+    color: azure;
+}
+
+.section8 {
+    background-color: black;
+    grid-area: section8;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.section8 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section9{
+    background-color: black;
+    grid-area: section9;
+    color: azure;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.section9 p{
+    margin: 20px;
+}
+
+.section9 h3{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.section9 div a h3{
+    color: azure;
+}
+
+.section10 {
+    background-color: black;
+    grid-area: section10;
+    margin: 5px 20px 5px 20px;
+    border-style: double;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.section10 div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section11 {
+    background-color: black;
+    grid-area: section11;
+    width: 100%;
+    height: 100px;
+    color: azure;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* mediaqueries main pages 320 - 424*/
+
+.grid-pages {
+    display: grid;
+    width: 100%;
+    height: 2300px;
+    background-color: black;
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+    "section12 section12 section12 section12" 
+    "section13 section13 section13 section13"
+    "grilla-1" 
+    "grilla-2" 
+    "grilla-3" 
+    "grilla-4"; 
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.section12 {
+    background-image: url(../assets/codigo3.jpg);
+    background-color: black;
+    grid-area: section12;
+    color: azure;
+    background-repeat: no-repeat;
+}
+
+.section12 div img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.presentacion {
+    padding: 120px;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 170px;
+}
+
+.presentacion h1{
+    font-size: 12px;
+}
+
+.presentacion h2{
+    display: none;
+}
+
+.presentacion :hover{
+    color: aqua;
+}
+
+.section13{
+    background-color: black;
+    grid-area: section13;
+    color: azure;
+    padding: 30px;
+    font-size: 12px;
+}
+
+.section13 h3{
+    text-align: center;
+    font-size: 14px;
+}
+
+.section13 p{
+    text-align: justify;
+}
+
+.section14 {
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "grilla-1" 
+    "grilla-2" 
+    "grilla-3" 
+    "grilla-4";
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+}
+
+.grilla-1{
+background-color: black;
+grid-area: grilla-1;
+color: azure;
+padding: 20px;
+font-size: 12px;
+text-align: center;
+}
+
+.grilla-1 h4{
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.grilla-2{
+    background-color: black;
+    grid-area: grilla-2;
+    color: azure;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    }
+
+    .grilla-2 h4{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+.grilla-3{
+    background-color: black;
+    grid-area: grilla-3;
+    color: azure;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    }
+
+    .grilla-3 h4{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+.grilla-4{
+    background-color: black;
+    grid-area: grilla-4;
+    color: azure;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.grilla-4 h4{
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
